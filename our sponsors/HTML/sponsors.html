@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ripple</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo.jpg"> 
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="navbar" >
+          <img src="/Images/image-removebg-preview.png" alt="logo" class="logo">
+          <nav>
+            <ul id="menuList">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Sponsors</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </nav>
+          <img src="/Images/try.png" alt="menu_icon" class="menu_icon" onclick="togglemenu()">
+        </div>          
+      </div>
+      <script>
+          var menuList=document.getElementById("menuList")
+          var move=document.getElementById("move")
+          menuList.style.maxHeight="0px";
+          function togglemenu(){
+              if(menuList.style.maxHeight=="0px"){
+                  menuList.style.maxHeight="200px"
+                  move.style.marginTop="140px"
+              }
+              else{
+                  menuList.style.maxHeight="0px"
+                  move.style.marginTop="0px"
+              }
+          }
+      </script>
+    <h1>Our Sponsors</h1>
+    <div class="sponsor-container">
+      <div class="sponsor">
+        <img src="/Images/sponsor1.jpg" alt="Sponsor 1">
+        <h2>MIT Manipal</h2>
+        <p>Reinforcing its commitment to nurturing an innovation mindset, the
+            Innovation Centre of MAHE (MIT) supported the idea and incubated
+            the startup. </p>
+      </div>
+      <div class="sponsor">
+        <img src="sponsor2.png" alt="Sponsor 2">
+        <h2>Sponsor 2</h2>
+        <p>Since Arpit said that more sponsors might be added. Sed euismod, nunc a condimentum fringilla, enim orci egestas mi, vel semper enim est et elit. </p>
+      </div>
+      <div class="sponsor">
+        <img src="sponsor3.png" alt="Sponsor 3">
+        <h2>Sponsor 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc a condimentum fringilla, enim orci egestas mi, vel semper enim est et elit. </p>
+      </div>
+    </div>
+  </body>
+</html>
